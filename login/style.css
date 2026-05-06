@@ -143,7 +143,7 @@ form input[type="submit"] {
 }
 #alertBox{
   position: fixed;
-  top: 20pX;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999;
