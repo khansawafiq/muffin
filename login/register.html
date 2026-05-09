@@ -21,32 +21,18 @@
     <section class="wrapper">
       <div class="form signup">
         <header>daftar</header>
-        <form action="#" method="post" id="registerFrom">
+        <form action="#" method="post" id="registerForm">
           <input type="text" class="form-control" placeholder="username" id="username"/>
-          <input type="text" placeholder="email" required/>
-          <input type="password" placeholder="password"/>
+          <input type="text" placeholder="email" id="email" required/>
+          <input type="password" placeholder="password" id="password" required/>
           <div class="checkbox">
             <input type="checkbox" id="signupCheck" />
             <label for="signupCheck">mengizinkan data</label>
           </div>
-          <input type="submit" value="daftar"> />
-            <p id="message"></p>
+          <button type="submit">daftar</button>
+          <p>sudah punya akun? <a href="login.html">masuk</a></p>
         </form>
       </div>
-
-
-      <script>
-        const wrapper = document.querySelector(".wrapper"),
-          signupHeader = document.querySelector(".signup header"),
-          loginHeader = document.querySelector(".login header");
-
-        loginHeader.addEventListener("click", () => {
-          wrapper.classList.add("active");
-        });
-        signupHeader.addEventListener("click", () => {
-          wrapper.classList.remove("active");
-        });
-      </script>
     </section>
     <p id="message"></p>
     <script src="js/register.js" defer></script>
