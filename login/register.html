@@ -20,33 +20,20 @@
   <body>
     <section class="wrapper">
       <div class="form signup">
-        <header>Daftar</header>
+        <header>daftar</header>
         <form action="#" method="post" id="registerFrom">
-          <input type="text" class="form-control" placeholder="Username" id="Ussername"/>
-          <input type="text" placeholder="Email" required/>
+          <input type="text" class="form-control" placeholder="username" id="username"/>
+          <input type="text" placeholder="email" required/>
           <input type="password" placeholder="password"/>
           <div class="checkbox">
             <input type="checkbox" id="signupCheck" />
-            <label for="signupCheck">Mengizinkan Data</label>
+            <label for="signupCheck">mengizinkan data</label>
           </div>
-          <input type="submit" value="Daftar"> />
+          <input type="submit" value="daftar"> />
             <p id="message"></p>
         </form>
       </div>
 
-      <div class="form login">
-        <header>Masuk</header>
-        <form action="#" method="post" id="loginFromMasuk">
-          <input type="text" placeholder="Username" required/>
-          <input type="Sandi" class="form-control" placeholder="Password" required id="Password"/>
-          <a href="#">Lupa sandi?</a>
-          <button type="submit">
-          <a href="../index.html" style="text-decoration: none; color: inherit;">masuk</a>
-          </button>
-          <div id="alertBox" class="alert" style="display:none;"></div>
-        </form>
-      </div>
-      
 
       <script>
         const wrapper = document.querySelector(".wrapper"),
