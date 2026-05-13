@@ -38,6 +38,24 @@ body {
   height: 100%;
   background: #fff;
   transition: all 0.6s ease;
+  /* Tambahkan ini: agar saat posisi di bawah, dia tidak menghalangi klik ke Signup */
+  pointer-events: none; 
+}
+
+/* Cari bagian .wrapper.active .form.login di CSS-mu dan pastikan ada baris pointer-events ini */
+.wrapper.active .form.login {
+  bottom: -15%;
+  border-radius: 35%;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+  /* Tambahkan ini: saat aktif (naik ke atas), form login bisa diklik lagi */
+  pointer-events: auto;
+}
+
+/* Tambahkan ini juga supaya tulisan "Login" di bawah tetap bisa diklik untuk memicu animasi */
+.form.login header {
+  color: #333;
+  opacity: 0.6;
+  pointer-events: auto;
 }
 
 .wrapper.active .form.login {
