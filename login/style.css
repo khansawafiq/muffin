@@ -17,17 +17,16 @@ body {
 }
 
 .wrapper {
-  position: relative;
   max-width: 470px;
   width: 100%;
   border-radius: 12px;
-  padding: 20px 30px 120px;
+  padding: 30px;
   background: #342519;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 .form.login{
+  width: 100%;
   background: #fff;
   padding: 30px;
   border-radius: 12px;
@@ -119,6 +118,14 @@ form input[type="submit"] {
   background: #342519;
   color: #fff;
   border: none;
+}
+
+.form.signup{
+  width: 100%;
+}
+
+.form.signup header{
+  color: #333;
 }
 
 .alert{
