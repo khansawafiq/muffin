@@ -1491,7 +1491,11 @@ a {
 }
 
 .mobile-nav-cta > .btn-primary{
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0;
+	padding-right: 0;
 }
 
 .mobile-overlay {
