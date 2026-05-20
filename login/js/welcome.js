@@ -12,10 +12,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const user = localStorage.getItem("username");
 
     if (user) {
-        document.getElementById("userInfo").innerText = "Halo, " + user;
+
+        // DESKTOP
+        document.getElementById("userInfo").innerText =
+            "Halo, " + user;
 
         document.getElementById("authArea").innerHTML = `
-            <button onclick="logout()" class="nav-cta">Logout</button>
+            <button onclick="logout()" class="nav-cta">
+                Logout
+            </button>
+        `;
+
+        // MOBILE
+        document.getElementById("mobileUserInfo").innerText =
+            "Halo, " + user;
+
+        document.getElementById("mobileAuthArea").innerHTML = `
+            <button onclick="logout()" class="btn-primary">
+                Logout
+            </button>
         `;
     }
 
